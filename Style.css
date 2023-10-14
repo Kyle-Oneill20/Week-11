@@ -1,0 +1,62 @@
+ * {
+    padding: 1;
+    margin: 0.5;
+    box-sizing: border-box;
+ } */
+ 
+ :root {
+    --color: #000;
+    --winner-blocks: #d2b48c;
+
+ }
+
+ body {
+    color: var(--color);
+    font-family:'fantasy', papyrus, cursive;
+ }
+ h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+ }
+.container {
+    padding: 50px;
+    height: 98vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-color: wheat;
+}
+
+#gameboard {
+    width: 445px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 43px;
+}
+.box {
+    height: 140px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color);
+    font-size: 115px;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+}
+.box:nth-child(3n){
+    border-right: navy;
+}
+.box:nth-child(6)~.box{
+    border-bottom: none;
+}
+button{
+    padding: 10px 15px;
+    border-radius: 11px;
+    background-color:snow;
+    color:black;
+    border-color: wheat;
+    font-weight: 700;
+
+}
